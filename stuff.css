@@ -70,10 +70,6 @@
 	--guildsize: 50;
 	--guildgap: 3;
 	--aligndms: 0;
-	--fontMain: 'Oxygen';
-	--fontUsername: 'Kaushan Script';
-	--fontInput: 'Potta One';
-	--selectionColor: #dd7cd0;
 }
 
 
@@ -240,7 +236,7 @@
 	text-align: center;
 	margin-top: 15px;
 	margin-left: -5px;
-	color: #d7b0ef;
+	color: var(--colorUsername);
 	transition: text-shadow .3s ease-in-out .3s;
 }
 
@@ -270,12 +266,6 @@
 	font-family: var(--fontUsername);
 	font-size: 150%;
 	line-height: 35px;
-}
-
-::selection,
-.content-3YMskv {
-	background: none;
-	color: #716ad1;
 }
 
 .textArea-12jD-V,
