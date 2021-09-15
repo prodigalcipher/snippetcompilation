@@ -7,43 +7,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script');
 @import url('https://fonts.googleapis.com/css2?family=Potta+One');
 @import url('https://discord-custom-covers.github.io/usrbg/dist/usrbg.css');
-
 :root {
-	--transparencycolor:			0,0,0;						/* default:	0,0,0																								*/
-	--transparencyalpha: 			0.5;						/* default: 0.15				(general darkness of the app)													*/
-	--messagetransparency:			0.5	;						/* default: 0.5					(additional shadows behind messages, set to 0 to remove boxes)					*/
-	--guildchanneltransparency:		0.15;						/* default: 0.15				(additional darkness for guild/channel list)									*/
-	--chatinputtransparency:		0.0;						/* default: 0.0					(additional darkness for chat input container)									*/
-	--memberlisttransparency:		0.0;						/* default: 0.0					(additional darkness for member list)											*/
-	--accentcolor:					255,178,245,.5;					/* default: 190,78,180			(RGB-format - blurple: 88,101,242 bd-blue: 58,113,193)							*/
-	
-	--font:							Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;		/* font used in most places														*/
-	--textshadow:					transparent;				/* default: transparent			(textshadow for text ontop of accentcolor nodes, ONLY accepts a color, no px)	*/
-	--settingsicons:				1;							/* Use Settings Icons in User/Server/Channel Settings: 1 = yes, 0 = no											*/
-	
-	--background: 					url('https://wallpaperaccess.com/full/3040339.jpg');	/* general background image				*/
-	--backgroundposition:			center;						/* default: center				(position of background - values: [center/top/right/bottom/left])				*/
-	--backgroundsize:				cover;						/* default: cover				(sizefit of background - values: [cover/contain/auto])							*/
-	--backgroundblur: 				4;						/* default: unset				(blur in px, only works when --background is set to an image)					*/
-	
-	--popout:						var(--background);			/* default: var(--background)	(change to use another background/color for modals/popouts)						*/
-	--popoutposition:				var(--backgroundposition);	/* default: center				(position of popout - values: [center/top/right/bottom/left])					*/
-	--popoutsize:					var(--backgroundsize);		/* default: cover				(sizefit of popout - values: [cover/contain/auto])								*/
-	--popoutblur:					var(--backgroundblur);		/* default: unset				(blur in px, only works when --popout is set to an image)						*/
-	
-	--backdrop:						rgba(0,0,0,0.85);			/* default: rgba(0,0,0,0.85)	(change to use another background/color for backdrops)							*/
-	--backdropposition:				center;						/* default: center				(position of backdrop - values: [center/top/right/bottom/left])					*/
-	--backdropsize:					cover;						/* default: cover				(sizefit of backdrop - values: [cover/contain/auto])							*/
-	--backdropblur:					unset;						/* default: unset				(blur in px, only works when --backdrop is set to an image)						*/
-	
-	--textbrightest: 				255,255,255;				/* default: 255,255,255			(text color for the brightest texts)											*/
-	--textbrighter: 				222,222,222;				/* default: 222,222,222			(text color for brighter texts)													*/
-	--textbright: 					200,200,200;				/* default: 200,200,200			(text color for bright texts)													*/
-	--textdark: 					160,160,160;				/* default: 160,160,160			(text color for dark texts)														*/
-	--textdarker: 					125,125,125;				/* default: 125,125,125			(text color for darker texts)													*/
-	--textdarkest: 					90,90,90;					/* default: 90,90,90			(text color for the darkest texts)												*/
-	
-	--version1_0_5:					none;						/* DO NOT CHANGE THIS VARIABLE , USED TO HIDE UPDATE NOTICE														*/
+	--transparencycolor: 0, 0, 0;
+	/* default:	0,0,0																								*/
+	--transparencyalpha: 0.5;
+	/* default: 0.15				(general darkness of the app)													*/
+	--messagetransparency: 0.5;
+	/* default: 0.5					(additional shadows behind messages, set to 0 to remove boxes)					*/
+	--guildchanneltransparency: 0.15;
+	/* default: 0.15				(additional darkness for guild/channel list)									*/
+	--chatinputtransparency: 0.0;
+	/* default: 0.0					(additional darkness for chat input container)									*/
+	--memberlisttransparency: 0.0;
+	/* default: 0.0					(additional darkness for member list)											*/
+	--accentcolor: 255, 178, 245, .5;
+	/* default: 190,78,180			(RGB-format - blurple: 88,101,242 bd-blue: 58,113,193)							*/
+	--font: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+	/* font used in most places														*/
+	--textshadow: transparent;
+	/* default: transparent			(textshadow for text ontop of accentcolor nodes, ONLY accepts a color, no px)	*/
+	--settingsicons: 1;
+	/* Use Settings Icons in User/Server/Channel Settings: 1 = yes, 0 = no											*/
+	--background: url('https://wallpaperaccess.com/full/3040339.jpg');
+	/* general background image				*/
+	--backgroundposition: center;
+	/* default: center				(position of background - values: [center/top/right/bottom/left])				*/
+	--backgroundsize: cover;
+	/* default: cover				(sizefit of background - values: [cover/contain/auto])							*/
+	--backgroundblur: 4;
+	/* default: unset				(blur in px, only works when --background is set to an image)					*/
+	--popout: var(--background);
+	/* default: var(--background)	(change to use another background/color for modals/popouts)						*/
+	--popoutposition: var(--backgroundposition);
+	/* default: center				(position of popout - values: [center/top/right/bottom/left])					*/
+	--popoutsize: var(--backgroundsize);
+	/* default: cover				(sizefit of popout - values: [cover/contain/auto])								*/
+	--popoutblur: var(--backgroundblur);
+	/* default: unset				(blur in px, only works when --popout is set to an image)						*/
+	--backdrop: rgba(0, 0, 0, 0.85);
+	/* default: rgba(0,0,0,0.85)	(change to use another background/color for backdrops)							*/
+	--backdropposition: center;
+	/* default: center				(position of backdrop - values: [center/top/right/bottom/left])					*/
+	--backdropsize: cover;
+	/* default: cover				(sizefit of backdrop - values: [cover/contain/auto])							*/
+	--backdropblur: unset;
+	/* default: unset				(blur in px, only works when --backdrop is set to an image)						*/
+	--textbrightest: 255, 255, 255;
+	/* default: 255,255,255			(text color for the brightest texts)											*/
+	--textbrighter: 222, 222, 222;
+	/* default: 222,222,222			(text color for brighter texts)													*/
+	--textbright: 200, 200, 200;
+	/* default: 200,200,200			(text color for bright texts)													*/
+	--textdark: 160, 160, 160;
+	/* default: 160,160,160			(text color for dark texts)														*/
+	--textdarker: 125, 125, 125;
+	/* default: 125,125,125			(text color for darker texts)													*/
+	--textdarkest: 90, 90, 90;
+	/* default: 90,90,90			(text color for the darkest texts)												*/
+	--version1_0_5: none;
+	/* DO NOT CHANGE THIS VARIABLE , USED TO HIDE UPDATE NOTICE														*/
 	--columns: 3;
 	--guildsize: 50;
 	--guildgap: 3;
@@ -51,70 +73,88 @@
 	--fontMain: 'Oxygen';
 	--fontUsername: 'Kaushan Script';
 	--fontInput: 'Potta One';
+	--selectionColor: #dd7cd0;
 }
 
 
 /* customization */
 
-::selection, .content-3YMskv{
-    background: none;
-    color: #dd7cd0; 
+::selection,
+.content-3YMskv {
+	background: none;
+	color: var(--selectionColor);
 }
 
-.username-1A8OIy, .headerName-fajvi9, .usernameFont-23TX-h, .headerNameWrapper-3res2c{
+.username-1A8OIy,
+.headerName-fajvi9,
+.usernameFont-23TX-h,
+.headerNameWrapper-3res2c {
 	font-weight: 1000 !important;
 	transition: filter .3s ease-in-out .3s;
 	filter: brightness(0) invert(1);
 	text-shadow: 0px 0px 5px;
-	}
-.username-1A8OIy:hover, .headerName-fajvi9:hover, .usernameFont-23TX-h:hover, .headerNameWrapper-3res2c:hover {
+}
+
+.username-1A8OIy:hover,
+.headerName-fajvi9:hover,
+.usernameFont-23TX-h:hover,
+.headerNameWrapper-3res2c:hover {
 	filter: brightness(1) invert(0) !important;
-} 
+}
 
 [href*="youtu.be"],
 [href*="youtube.com"] {
-color:#cf6a67 !important;
-font-weight: 700;
+	color: #cf6a67 !important;
+	font-weight: 700;
 }
+
 [href*="twitch.tv"] {
-color:#b56ed1 !important;
-font-weight: 700;
+	color: #b56ed1 !important;
+	font-weight: 700;
 }
+
 [href*="spotify.com"] {
-color:#82c57c !important; 
-font-weight: 700;
+	color: #82c57c !important;
+	font-weight: 700;
 }
+
 [href*="discord.com/channels/"] {
-color:#7289da !important;
+	color: #7289da !important;
 }
+
 [href*="discord.com/channels/"]::before {
-content:'jump to message: ';
-font-size:16px;
-font-weight:700;
-color: #8070c9;
+	content: 'jump to message: ';
+	font-size: 16px;
+	font-weight: 700;
+	color: #8070c9;
 }
+
 [href*="reddit.com"] {
-color:#e05a0c !important; 
-font-weight: 700;
+	color: #e05a0c !important;
+	font-weight: 700;
 }
-[href*="instagram.com/"]{
-background: -webkit-linear-gradient(80deg, rgb(255, 238, 0), rgb(255, 157, 11), #b700ff);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-font-weight: 700;
-} 
-[href*="twitter.com/"]{
-color:#7dc7e4 !important;
-font-weight: 700;
+
+[href*="instagram.com/"] {
+	background: -webkit-linear-gradient(80deg, rgb(255, 238, 0), rgb(255, 157, 11), #b700ff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 700;
 }
+
+[href*="twitter.com/"] {
+	color: #7dc7e4 !important;
+	font-weight: 700;
+}
+
 [href*="betterdiscord.app/"],
 [href*="discord.gg/"] {
-color:#7289da !important;
-font-weight: 700;
+	color: #7289da !important;
+	font-weight: 700;
 }
-[href*="github.com"]{
-color:#82dfc3 !important;
-font-weight: 700;
+
+[href*="github.com"] {
+	color: #82dfc3 !important;
+	font-weight: 700;
 }
 
 @keyframes statusChanger {
@@ -150,255 +190,319 @@ font-weight: 700;
 	}
 }
 
-#status-picker .separator-2I32lJ, #status-picker .description-2L932D {
+#status-picker .separator-2I32lJ,
+#status-picker .description-2L932D {
 	display: none;
-	}
-	#status-picker .focused-3afm-j {
+}
+
+#status-picker .focused-3afm-j {
 	background: linear-gradient(45deg, #2b45a2, #7289da);
-	}
-	#status-picker .focused-3afm-j#status-picker-online {
+}
+
+#status-picker .focused-3afm-j#status-picker-online {
 	background: linear-gradient(45deg, #21583f, #43b581);
-	}
-	#status-picker .focused-3afm-j#status-picker-idle {
+}
+
+#status-picker .focused-3afm-j#status-picker-idle {
 	background: linear-gradient(45deg, #915c03, #faa61a);
-	}
-	#status-picker .focused-3afm-j#status-picker-dnd {
+}
+
+#status-picker .focused-3afm-j#status-picker-dnd {
 	background: linear-gradient(45deg, #aa0e0e, #f04747);
-	}
-	#status-picker .focused-3afm-j#status-picker-invisible {
+}
+
+#status-picker .focused-3afm-j#status-picker-invisible {
 	background: linear-gradient(45deg, #3a4047, #747f8d);
 }
 
-
-.toolbar-1t6TWx{
-    padding-right: 40px;
+.toolbar-1t6TWx {
+	padding-right: 40px;
 }
 
-.form-2fGMdU{
-    padding-right: 60px;
+.form-2fGMdU {
+	padding-right: 60px;
 }
 
-#app-mount{
-    : var(--fontMain);
+#app-mount {
+	: var(--fontMain);
 }
 
-.size14-e6ZScH .title-eS5yk3{
-    display: inline-block;
-    font-family: var(--fontUsername);
-    font-weight: 700;
-    font-size: 180%;
-    height: 90px;
-    line-height: 70px;
-    margin-bottom: -18px;
-    min-width: 111%;
-    max-width: 111%;
-    text-align: center;
-    margin-top: 15px;
-    margin-left: -5px;
-    color: #d7b0ef;
-    transition: text-shadow .3s ease-in-out .3s;
+.size14-e6ZScH .title-eS5yk3 {
+	display: inline-block;
+	font-family: var(--fontUsername);
+	font-weight: 700;
+	font-size: 180%;
+	height: 90px;
+	line-height: 70px;
+	margin-bottom: -18px;
+	min-width: 111%;
+	max-width: 111%;
+	text-align: center;
+	margin-top: 15px;
+	margin-left: -5px;
+	color: #d7b0ef;
+	transition: text-shadow .3s ease-in-out .3s;
 }
 
-.size14-e6ZScH .title-eS5yk3:hover{
-    transition: text-shadow .3s ease-in-out .3s;
-    text-shadow: 0px 0px 5px;
+.size14-e6ZScH .title-eS5yk3:hover {
+	transition: text-shadow .3s ease-in-out .3s;
+	text-shadow: 0px 0px 5px;
 }
 
-.username-1a8oiy, .headername-fajvi9, .usernamefont-23tx-h, .headernamewrapper-3res2c{
-    font-weight: 1000 !important;
-    transition: filter .3s ease-in-out .3s;
-    filter: brightness(0) invert(1);
-    text-shadow: 0px 0px 5px;
+.username-1a8oiy,
+.headername-fajvi9,
+.usernamefont-23tx-h,
+.headernamewrapper-3res2c {
+	font-weight: 1000 !important;
+	transition: filter .3s ease-in-out .3s;
+	filter: brightness(0) invert(1);
+	text-shadow: 0px 0px 5px;
 }
 
-.username-1a8oiy:hover, .headername-fajvi9:hover, .usernamefont-23tx-h:hover, .headernamewrapper-3res2c:hover {
-    filter: brightness(1) invert(0) !important;
+.username-1a8oiy:hover,
+.headername-fajvi9:hover,
+.usernamefont-23tx-h:hover,
+.headernamewrapper-3res2c:hover {
+	filter: brightness(1) invert(0) !important;
 }
 
-.username-1A8OIy{
-    font-family: var(--fontUsername);    
-    font-size: 150%;
-    line-height: 35px;
+.username-1A8OIy {
+	font-family: var(--fontUsername);
+	font-size: 150%;
+	line-height: 35px;
 }
 
-::selection, .content-3YMskv{
-    background: none;
-    color: #716ad1; 
+::selection,
+.content-3YMskv {
+	background: none;
+	color: #716ad1;
 }
 
-.textArea-12jD-V, .timestamp-3ZCmNB{
-    font-family: var(--fontInput);
+.textArea-12jD-V,
+.timestamp-3ZCmNB {
+	font-family: var(--fontInput);
 }
 
 :root {
-     --primary-rounding: 5px;
-     --primary-spacing: 10px;
-     --secondary-spacing: 20px;
-     --secondary-rounding: 10px;
-}
- .userpopout-xaxa6l {
-     background-color: var(--background-secondary-alt);
-     border-radius: var(--primary-rounding);
-}
- .userpopout-xaxa6l .headernormal-3kxfbt {
-     margin: var(--primary-spacing);
-     margin-bottom: 0 !important;
-}
- .userpopout-xaxa6l .headernormal-3kxfbt .banner-2qyc2d {
-     background-color: var(--background-secondary) !important;
-     border-radius: var(--primary-rounding);
-     height: 120px;
-     width: 100%;
-}
- .userpopout-xaxa6l .headernormal-3kxfbt .bannerpremium-2hsawz {
-     filter: brightness(0.3);
-}
- .userpopout-xaxa6l .avatarwrapper-3r9pdd {
-     left: var(--secondary-spacing);
-     top: var(--secondary-spacing);
-}
- .userpopout-xaxa6l .avatarwrapper-3r9pdd .avatar-37joim {
-     background-color: transparent;
-     border-radius: var(--primary-rounding);
-     height: 99px !important;
-     width: 90px !important;
-     border: none;
-}
- .userpopout-xaxa6l .avatarwrapper-3r9pdd .avatar-37joim .mask-1l8v16 foreignobject {
-     mask: none;
-}
- .userpopout-xaxa6l .avatarwrapper-3r9pdd .avatar-37joim .mask-1l8v16 foreignobject .avatar-vxgulz {
-     background-color: var(--background-primary);
-     border-radius: var(--primary-rounding);
-}
- .userpopout-xaxa6l .avatarwrapper-3r9pdd .avatar-37joim .mask-1l8v16 .pointerevents-2zdfdo {
-     user-select: none !important;
-     ry: var(--primary-rounding);
-     height: 16px !important;
-     width: 16px !important;
-     mask: none;
-     x: 60;
-     y: 60;
-}
- .userpopout-xaxa6l .avatarwrapper-3r9pdd .avatarhint-2a3rnb {
-     border-radius: var(--primary-rounding);
-     height: 99px;
-     width: 99px;
-     left: 0;
-     top: 0;
-}
- .userpopout-xaxa6l .avatarwrapper-3r9pdd .avatarhint-2a3rnb foreignobject {
-     mask: none;
-}
- .userpopout-xaxa6l .headertop-3vnv-a {
-     padding: var(--secondary-spacing) 0 0 0;
-     right: var(--primary-spacing);
-     position: absolute;
-     height: 100px;
-     width: 171px;
-}
- .userpopout-xaxa6l .headertop-3vnv-a .profilebadges-ohc0vu {
-     right: var(--primary-spacing);
-     top: unset;
-     bottom: 0;
-}
- .userpopout-xaxa6l .headertop-3vnv-a .headertext-1vvs-u {
-     padding-left: var(--primary-spacing);
-}
- .userpopout-xaxa6l .body-3hblxn {
-     background-color: var(--background-secondary);
-     border-radius: var(--primary-rounding);
-     margin: var(--primary-spacing);
-     max-height: 400px;
-     padding: 10px;
-}
- .userpopout-xaxa6l .body-3hblxn .bodyinnerwrapper-26fqxj {
-     background-color: var(--background-tertiary);
-     border-radius: var(--primary-rounding);
-     padding: 6px;
-}
- .userpopout-xaxa6l .footer-3ukyou {
-     background-color: var(--background-secondary);
-     border-radius: var(--primary-rounding);
-     margin: var(--primary-spacing);
-     margin-top: 0 !important;
-     padding: 16px;
+	--primary-rounding: 5px;
+	--primary-spacing: 10px;
+	--secondary-spacing: 20px;
+	--secondary-rounding: 10px;
 }
 
+.userpopout-xaxa6l {
+	background-color: var(--background-secondary-alt);
+	border-radius: var(--primary-rounding);
+}
 
-#message-actions-pin, #message-pin, #message-unpin{
-    color: skyblue;
+.userpopout-xaxa6l .headernormal-3kxfbt {
+	margin: var(--primary-spacing);
+	margin-bottom: 0 !important;
 }
-#message-actions-pin:hover, #message-pin:hover, #message-unpin:hover {
-    background-color: #67a7c0;
-    color: #fff;
+
+.userpopout-xaxa6l .headernormal-3kxfbt .banner-2qyc2d {
+	background-color: var(--background-secondary) !important;
+	border-radius: var(--primary-rounding);
+	height: 120px;
+	width: 100%;
 }
-#message-actions-reply, #message-reply {
-    color: khaki;
+
+.userpopout-xaxa6l .headernormal-3kxfbt .bannerpremium-2hsawz {
+	filter: brightness(0.3);
 }
-#message-actions-reply:hover, #message-reply:hover {
-    background-color: #c5bb5d;
-    color: #fff;
+
+.userpopout-xaxa6l .avatarwrapper-3r9pdd {
+	left: var(--secondary-spacing);
+	top: var(--secondary-spacing);
 }
-#message-actions-thread, #message-thread {
-    color: #69c069;
+
+.userpopout-xaxa6l .avatarwrapper-3r9pdd .avatar-37joim {
+	background-color: transparent;
+	border-radius: var(--primary-rounding);
+	height: 99px !important;
+	width: 90px !important;
+	border: none;
 }
-#message-actions-thread:hover, #message-thread:hover {
-    background-color: #5dbd5d;
-    color: #fff;
+
+.userpopout-xaxa6l .avatarwrapper-3r9pdd .avatar-37joim .mask-1l8v16 foreignobject {
+	mask: none;
 }
-#message-actions-mark-unread, #message-mark-unread {
-    color: plum;
+
+.userpopout-xaxa6l .avatarwrapper-3r9pdd .avatar-37joim .mask-1l8v16 foreignobject .avatar-vxgulz {
+	background-color: var(--background-primary);
+	border-radius: var(--primary-rounding);
 }
-#message-actions-mark-unread:hover, #message-mark-unread:hover {
-    background-color: #c27ec2;
-    color: #fff;
+
+.userpopout-xaxa6l .avatarwrapper-3r9pdd .avatar-37joim .mask-1l8v16 .pointerevents-2zdfdo {
+	user-select: none !important;
+	ry: var(--primary-rounding);
+	height: 16px !important;
+	width: 16px !important;
+	mask: none;
+	x: 60;
+	y: 60;
 }
-#message-actions-copy-link, #message-copy-link {
-    color: lightseagreen;
+
+.userpopout-xaxa6l .avatarwrapper-3r9pdd .avatarhint-2a3rnb {
+	border-radius: var(--primary-rounding);
+	height: 99px;
+	width: 99px;
+	left: 0;
+	top: 0;
 }
-#message-actions-copy-link:hover, #message-copy-link:hover {
-    background-color: #199c96;
-    color: #fff;
+
+.userpopout-xaxa6l .avatarwrapper-3r9pdd .avatarhint-2a3rnb foreignobject {
+	mask: none;
 }
-#message-actions-tts, #message-tts{
-    color: var(--brand-experiment);
+
+.userpopout-xaxa6l .headertop-3vnv-a {
+	padding: var(--secondary-spacing) 0 0 0;
+	right: var(--primary-spacing);
+	position: absolute;
+	height: 100px;
+	width: 171px;
 }
-#message-actions-tts:hover, #message-tts:hover{
-    background-color: var(--brand-experiment);
-    color: #fff;
+
+.userpopout-xaxa6l .headertop-3vnv-a .profilebadges-ohc0vu {
+	right: var(--primary-spacing);
+	top: unset;
+	bottom: 0;
 }
-#message-actions-copy-id, #message-devmode-copy-id {
-    color: lightsalmon;
+
+.userpopout-xaxa6l .headertop-3vnv-a .headertext-1vvs-u {
+	padding-left: var(--primary-spacing);
 }
-#message-actions-copy-id:hover #message-devmode-copy-id:hover{
-    background-color: lightsalmon;
-    color: #fff;
+
+.userpopout-xaxa6l .body-3hblxn {
+	background-color: var(--background-secondary);
+	border-radius: var(--primary-rounding);
+	margin: var(--primary-spacing);
+	max-height: 400px;
+	padding: 10px;
 }
-#message-edit, #message-actions-edit{
-    color: steelblue;
+
+.userpopout-xaxa6l .body-3hblxn .bodyinnerwrapper-26fqxj {
+	background-color: var(--background-tertiary);
+	border-radius: var(--primary-rounding);
+	padding: 6px;
 }
-#message-edit:hover,  #message-actions-edit:hover{
-    background-color: steelblue;
-    color: #fff;
+
+.userpopout-xaxa6l .footer-3ukyou {
+	background-color: var(--background-secondary);
+	border-radius: var(--primary-rounding);
+	margin: var(--primary-spacing);
+	margin-top: 0 !important;
+	padding: 16px;
 }
-#message-add-reaction{
-    color: goldenrod;
+
+#message-actions-pin,
+#message-pin,
+#message-unpin {
+	color: skyblue;
 }
-#message-add-reaction:hover{
-    background-color: goldenrod;
-    color: #fff;
+
+#message-actions-pin:hover,
+#message-pin:hover,
+#message-unpin:hover {
+	background-color: #67a7c0;
+	color: #fff;
+}
+
+#message-actions-reply,
+#message-reply {
+	color: khaki;
+}
+
+#message-actions-reply:hover,
+#message-reply:hover {
+	background-color: #c5bb5d;
+	color: #fff;
+}
+
+#message-actions-thread,
+#message-thread {
+	color: #69c069;
+}
+
+#message-actions-thread:hover,
+#message-thread:hover {
+	background-color: #5dbd5d;
+	color: #fff;
+}
+
+#message-actions-mark-unread,
+#message-mark-unread {
+	color: plum;
+}
+
+#message-actions-mark-unread:hover,
+#message-mark-unread:hover {
+	background-color: #c27ec2;
+	color: #fff;
+}
+
+#message-actions-copy-link,
+#message-copy-link {
+	color: lightseagreen;
+}
+
+#message-actions-copy-link:hover,
+#message-copy-link:hover {
+	background-color: #199c96;
+	color: #fff;
+}
+
+#message-actions-tts,
+#message-tts {
+	color: var(--brand-experiment);
+}
+
+#message-actions-tts:hover,
+#message-tts:hover {
+	background-color: var(--brand-experiment);
+	color: #fff;
+}
+
+#message-actions-copy-id,
+#message-devmode-copy-id {
+	color: lightsalmon;
+}
+
+#message-actions-copy-id:hover #message-devmode-copy-id:hover {
+	background-color: lightsalmon;
+	color: #fff;
+}
+
+#message-edit,
+#message-actions-edit {
+	color: steelblue;
+}
+
+#message-edit:hover,
+#message-actions-edit:hover {
+	background-color: steelblue;
+	color: #fff;
+}
+
+#message-add-reaction {
+	color: goldenrod;
+}
+
+#message-add-reaction:hover {
+	background-color: goldenrod;
+	color: #fff;
 }
 
 .userpopout-xaxa6l[style*="--user-background"] .banner-2qyc2d,
 .root-3qyah1[style*="--user-background"] .banner-2qyc2d {
-    height: 120px;
-    background: var(--background-floating) var(--user-background) var(--user-popout-position, center) center / cover !important;
+	height: 120px;
+	background: var(--background-floating) var(--user-background) var(--user-popout-position, center) center / cover !important;
 }
+
 .userpopout-xaxa6l[style*="--user-background"] .avatarpositionnormal-azjasn {
-    top: 76px;
+	top: 76px;
 }
 
 .root-3qyah1[style*="--user-background"] .banner-2qyc2d {
-  height: 240px;
+	height: 240px;
 }
