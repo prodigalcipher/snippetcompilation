@@ -48,6 +48,9 @@
 	--guildsize: 50;
 	--guildgap: 3;
 	--aligndms: 0;
+	--fontMain: 'Oxygen';
+	--fontUsername: 'Kaushan Script';
+	--fontInput: 'Potta One';
 }
 
 
@@ -164,7 +167,7 @@ font-weight: 700;
 	}
 	#status-picker .focused-3afm-j#status-picker-invisible {
 	background: linear-gradient(45deg, #3a4047, #747f8d);
-	}
+}
 
 
 .toolbar-1t6TWx{
@@ -176,15 +179,15 @@ font-weight: 700;
 }
 
 #app-mount{
-    font-family: "Potta One";
+    : var(--fontMain);
 }
 
 .size14-e6ZScH .title-eS5yk3{
     display: inline-block;
-    font-family: "Kaushan Script";
+    font-family: var(--fontUsername);
     font-weight: 700;
-	font-size: 180%;
-	height: 90px;
+    font-size: 180%;
+    height: 90px;
     line-height: 70px;
     margin-bottom: -18px;
     min-width: 111%;
@@ -198,7 +201,7 @@ font-weight: 700;
 
 .size14-e6ZScH .title-eS5yk3:hover{
     transition: text-shadow .3s ease-in-out .3s;
-	text-shadow: 0px 0px 5px;
+    text-shadow: 0px 0px 5px;
 }
 
 .username-1a8oiy, .headername-fajvi9, .usernamefont-23tx-h, .headernamewrapper-3res2c{
@@ -213,7 +216,7 @@ font-weight: 700;
 }
 
 .username-1A8OIy{
-    font-family: "kaushan script";    
+    font-family: var(--fontUsername);    
     font-size: 150%;
     line-height: 35px;
 }
@@ -224,7 +227,7 @@ font-weight: 700;
 }
 
 .textArea-12jD-V, .timestamp-3ZCmNB{
-    font-family: "Potta One";
+    font-family: var(--fontInput);
 }
 
 :root {
