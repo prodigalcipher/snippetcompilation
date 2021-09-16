@@ -80,7 +80,7 @@
 }
 
 .username-1A8OIy, .headerName-fajvi9, .usernameFont-23TX-h, .headerNameWrapper-3res2c{
-	color: pink !important;
+	color: var(--colorUsername) !important;
   	transition: color .5s ease-in-out; 
 }
 
