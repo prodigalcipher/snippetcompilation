@@ -86,7 +86,7 @@
 
 
 .username-1A8OIy:hover, .headerName-fajvi9:hover, .usernameFont-23TX-h:hover, .headerNameWrapper-3res2c:hover{
-	color: var(--role-color) !important;
+	color: rgb(var(--role-color)) !important;
   	transition: color .5s ease-in-out; 
   	text-decoration: none !important;
 }
